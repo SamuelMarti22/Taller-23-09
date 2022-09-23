@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bungee+Spice&family=Passions+Conflict&display=swap');
+*{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+header{
+    width: 100%;
+    justify-content: end;
+    display: flex;
+}
+body{
+    width: auto;
+    height: auto;
+    background-color: #1B2430;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.logo{
+    width: 130px;
+    height: 90px;
+    display: flex;
+}
+.contenedor{
+    width: 100%;
+    height: 500%;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 35px;
+}
+.tarjeta_info{
+    justify-content: center;
+    display: flex;
+    height: 250px;
+    padding: 30px;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.fotos{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.foto1{
+    background-image: url(../assets/imagen-1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.foto2{
+    background-image: url(../assets/imagen-2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.foto3{
+    background-image: url(../assets/imagen-3.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.prueba{
+    width: 230px;
+    height: 230px;
+    background-color: blue;
+    border-radius: 50%;
+}
+.tarjeta1{
+    background-image: url(../assets/fondo-1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+h1{
+    visibility: hidden;
+}
+.tarjeta1:hover h1{
+    animation-name: letras;
+    animation-duration: 1s;
+    visibility: visible;
+    font-family: 'Passions Conflict', cursive;
+    text-shadow: 0 0 2px white;
+    font-size: 45px;
+}
+.tarjeta2:hover h1{
+    animation-name: letras;
+    animation-duration: 1s;
+    visibility: visible;
+    font-family: 'Anton', sans-serif;
+    text-shadow: 0 0 2px white;
+    font-size: 35px;
+    
+}
+.tarjeta3:hover h1{
+    animation-name: letras;
+    animation-duration: 1s;
+    visibility: visible;
+    font-family: 'Bungee Spice', cursive;
+}
+.tarjeta2{
+    background-image: url(../assets/fondo-2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.tarjeta3{
+    background-image: url(../assets/fondo-3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+footer{
+    background-color: #121820;
+    width: 98vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer h4{
+    font-size: 20px;
+}
+@keyframes letras {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
